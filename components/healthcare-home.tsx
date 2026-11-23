@@ -7,7 +7,6 @@ import {
   Bone,
   Brain,
   CalendarDays,
-  Check,
   Clock3,
   HeartHandshake,
   HeartPulse,
@@ -363,17 +362,19 @@ function SiteFooter() {
 
 export function HealthcareHome() {
   return (
-    <main className="min-h-screen bg-white text-[#183c35]">
+    <>
       <SiteHeader />
-      <HeroSection />
-      <WelcomeStrip />
-      <DepartmentsSection />
-      <DoctorsSection />
-      <ServicesSection />
-      <AppointmentSection />
-      <HealthLibrarySection />
-      <EmergencySection />
+      <main className="min-h-screen bg-white text-[#183c35]">
+        <HeroSection />
+        <WelcomeStrip />
+        <DepartmentsSection />
+        <DoctorsSection />
+        <ServicesSection />
+        <AppointmentSection />
+        <HealthLibrarySection />
+        <EmergencySection />
+      </main>
       <SiteFooter />
-    </main>
+    </>
   )
 }
